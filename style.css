@@ -1,0 +1,144 @@
+/* 
+Theme Name: LearningWordPress
+Author: Radoslav
+Author URI: C:\Users\Rado_PC\Desktop\football\scripts\project\index.html
+Version: 1.0
+*/
+
+body {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #006ec3;
+    text-decoration: underline;
+}
+
+p {
+    line-height: 1.65em;
+
+}
+
+/* GENERAL LAYOUT */
+
+div.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+article.post {
+    border-bottom: 2px dotted #bbbbbb;
+}
+
+article.post:last-of-type {
+    border-bottom: none;
+}
+
+/* HEADER */
+
+.site-header {
+    border-bottom: 2px solid #999;
+}
+
+.site-footer {
+    margin-top: 2em;
+    border-top: 2px solid #999;
+}
+
+/* NAVIGATION MENUS */
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav ul:before, .site-nav ul:after {
+    content: "";
+    display: table;
+}
+.site-nav ul:after {
+    clear: both;
+}
+
+.site-nav ul {
+    *zoom: 1;
+}
+
+.site-nav ul li {
+    list-style: none;
+    float: left;
+}
+
+/* Site header menu */
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited{
+    display: block;
+    padding: 1em 2em;
+    border: 1px solid #BBB;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.site-header nav ul li a:hover{
+    background: linear-gradient(#a5deec, #6ddceb);
+    box-shadow: 1px 2px 5px;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited{
+    background: linear-gradient(#cacaca, #9b9b9b);
+    color: white;
+}
+
+/* Footer Menu */
+
+.site-footer nav ul li {
+    margin-right: 1em;
+    padding-right: 1em;
+    border-right: 1px dotted #BBB;
+}
+
+.site-footer nav ul li:last-of-type {
+    border-right: none;
+}
+
+#menu-footer-menu {
+    display: grid;
+}
+
+.site-footer {
+    text-align: center;
+}
+
+/* Two column title layout */
+
+div.text-column {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+/* Info Box Styles */
+
+div.info-box {
+    width: 30%;
+    float: right;
+    margin: 0 0 30px 30px;
+    padding : 20px;
+    background: #EEE;
+}
+
+div.info-box h4 {
+    margin-bottom: 6px;
+}
+
+div.info-box p {
+    font-size: 85%;
+}
